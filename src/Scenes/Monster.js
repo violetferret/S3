@@ -95,12 +95,44 @@ class Monster extends Phaser.Scene {
         my.sprite.leftHorn.flipX = true;
         my.sprite.rightHorn = this.add.sprite(this.rightHornX, this.rightHornY, "monsterParts", "detail_green_horn_small.png");
 
-
         my.sprite.mouthFangs.visible = false;
+
+        this.input.keyboard.on('keydown', (event) => {
+            console.log("A key was pressed.");
+            if (event.keyCode === Phaser.Input.Keyboard.KeyCodes.S) {
+                // console.log(event.keyCode);
+                my.sprite.mouthSmile.visible = true;
+                my.sprite.mouthFangs.visible = false;
+            } else if (event.keyCode === Phaser.Input.Keyboard.KeyCodes.F) {
+                // console.log(event.keyCode);
+                my.sprite.mouthSmile.visible = false;
+                my.sprite.mouthFangs.visible = true;
+            } else if (event.keyCode === Phaser.Input.Keyboard.KeyCodes.A) {
+                // console.log(event.keyCode);
+                my.sprite.bodyX -= 10;
+                // my.sprite.smileX -= 10;
+                // my.sprite.leftArmX += 10;
+                // my.sprite.rightArmX += 10;
+                // my.sprite.leftLegX += 10;
+                // my.sprite.rightLegX += 10;
+                // my.sprite.mouthSmileX += 10;
+                // my.sprite.mouthFangsX += 10;
+                // my.sprite.leftEyeX += 10;
+                // my.sprite.rightEyeX += 10;
+                // my.sprite.leftEarX += 10;
+                // my.sprite.rightEarX += 10;
+                // my.sprite.leftHornX += 10;
+                // my.sprite.rightHornX += 10;
+                
+            } else if (event.keyCode === Phaser.Input.Keyboard.KeyCodes.D) {
+                console.log(event.keyCode);
+            }
+        });
     }
 
     update() {
         let my = this.my;    // create an alias to this.my for readability
+
 
        
     }
