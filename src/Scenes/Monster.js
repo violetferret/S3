@@ -108,25 +108,48 @@ class Monster extends Phaser.Scene {
                 my.sprite.mouthSmile.visible = false;
                 my.sprite.mouthFangs.visible = true;
             } else if (event.keyCode === Phaser.Input.Keyboard.KeyCodes.A) {
-                // console.log(event.keyCode);
-                my.sprite.bodyX -= 10;
-                // my.sprite.smileX -= 10;
-                // my.sprite.leftArmX += 10;
-                // my.sprite.rightArmX += 10;
-                // my.sprite.leftLegX += 10;
-                // my.sprite.rightLegX += 10;
-                // my.sprite.mouthSmileX += 10;
-                // my.sprite.mouthFangsX += 10;
-                // my.sprite.leftEyeX += 10;
-                // my.sprite.rightEyeX += 10;
-                // my.sprite.leftEarX += 10;
-                // my.sprite.rightEarX += 10;
-                // my.sprite.leftHornX += 10;
-                // my.sprite.rightHornX += 10;
+                my.sprite.body.setX(my.sprite.body.x - 5);
+
+                my.sprite.mouthSmile.setX(my.sprite.mouthSmile.x - 5);
+
+                my.sprite.leftArm.setX(my.sprite.leftArm.x - 5);
+                my.sprite.rightArm.setX(my.sprite.rightArm.x - 5);
+
+                my.sprite.leftLeg.setX(my.sprite.leftLeg.x - 5);
+                my.sprite.rightLeg.setX(my.sprite.rightLeg.x - 5);
+
+                my.sprite.mouthFangs.setX(my.sprite.mouthFangs.x - 5);
+
+                my.sprite.leftEye.setX(my.sprite.leftEye.x - 5);
+                my.sprite.rightEye.setX(my.sprite.rightEye.x - 5);
+
+                my.sprite.leftEar.setX(my.sprite.leftEar.x - 5);
+                my.sprite.rightEar.setX(my.sprite.rightEar.x - 5);
+
+                my.sprite.leftHorn.setX(my.sprite.leftHorn.x - 5);
+                my.sprite.rightHorn.setX(my.sprite.rightHorn.x - 5);
                 
             } else if (event.keyCode === Phaser.Input.Keyboard.KeyCodes.D) {
-                console.log(event.keyCode);
-            }
+                my.sprite.body.setX(my.sprite.body.x + 5);
+
+                my.sprite.mouthSmile.setX(my.sprite.mouthSmile.x + 5);
+
+                my.sprite.leftArm.setX(my.sprite.leftArm.x + 5);
+                my.sprite.rightArm.setX(my.sprite.rightArm.x + 5);
+
+                my.sprite.leftLeg.setX(my.sprite.leftLeg.x + 5);
+                my.sprite.rightLeg.setX(my.sprite.rightLeg.x + 5);
+
+                my.sprite.mouthFangs.setX(my.sprite.mouthFangs.x + 5);
+
+                my.sprite.leftEye.setX(my.sprite.leftEye.x + 5);
+                my.sprite.rightEye.setX(my.sprite.rightEye.x + 5);
+
+                my.sprite.leftEar.setX(my.sprite.leftEar.x + 5);
+                my.sprite.rightEar.setX(my.sprite.rightEar.x + 5);
+
+                my.sprite.leftHorn.setX(my.sprite.leftHorn.x + 5);
+                my.sprite.rightHorn.setX(my.sprite.rightHorn.x + 5);            }
         });
     }
 
