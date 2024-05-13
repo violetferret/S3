@@ -1,5 +1,3 @@
-**Build A Monster**
+# Build A Monster 
 
-Template code for displaying sprites from a spritesheet Atlas (XML) using Phaser 3.
-
-Uses Kenny Assets "[Monster Builder Pack](https://kenney.nl/assets/monster-builder-pack)" set, with gratitude.
+My submission for a monster-building exercise, created for Professor Jim Whitehead's Spring 2024 CMPM 120 class at UCSC.
